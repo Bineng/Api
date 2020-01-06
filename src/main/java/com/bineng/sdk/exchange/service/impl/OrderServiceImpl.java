@@ -63,4 +63,9 @@ public class OrderServiceImpl implements OrderService {
         final Call<Map<String,List<Long>>> call = this.orderApi.cancelByIds(pairCode, ids);
         return call.execute().body();
     }
+
+    public OrdersDTO orderById(String pairCode, Long id) throws IOException {
+        final Call<OrdersDTO> call = this.orderApi.orderById(pairCode,id);
+        return call.execute().body();
+    }
 }

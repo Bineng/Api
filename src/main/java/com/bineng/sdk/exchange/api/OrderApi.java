@@ -74,4 +74,14 @@ public interface OrderApi {
      */
     @HTTP(method = "DELETE", path = "/openapi/exchange/{pairCode}/cancelByIds", hasBody = true)
     Call<Map<String,List<Long>>> cancelByIds(@Path("pairCode") String pairCode, @Query("ids") final List<Long> ids);
+
+
+
+    /**
+     * 根据交易对查询订单
+     */
+
+    @HTTP(method = "GET", path = "/openapi/exchange/{pairCode}/orders/{id}")
+    Call<OrdersDTO> orderById(@Path("pairCode") String pairCode,@Path("id")Long id);
+
 }

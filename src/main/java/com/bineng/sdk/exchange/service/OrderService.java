@@ -53,4 +53,10 @@ public interface OrderService {
      */
     Map<String,List<Long>> cancelByIds(final String pairCode,
                                        final List<Long> ids) throws IOException;
+
+
+    /**
+     * 完成订单列表
+     */
+    OrdersDTO orderById(final String pairCode,final Long id) throws IOException;
 }
