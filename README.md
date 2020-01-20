@@ -1,6 +1,6 @@
-1strade trading platform official API documentation
+bn trading platform official API documentation
 ==================================================
-[1strade][] Trading platform developer documentation([简体中文文档][])。
+[bn][] Trading platform developer documentation([简体中文文档][])。
 <!-- TOC -->
 - [Introduction ](#Introduction )
 - [Start to use ](#Start-to-use)
@@ -94,7 +94,7 @@ hmac = hmac(secretkey, Message, SHA256)
 Signature = base64.encode(hmac.digest())
 ```
 ## Request interaction  
-Root URL for REST access：`https://www.1strade.io`
+Root URL for REST access：`https://bn.bineng.com
 ### Request
 All requests are based on the Https protocol, and the Content-Type in the request header information needs to be uniformly set to: 'application/json'.
 **Request interaction description**
@@ -682,6 +682,3 @@ Get the bills of crypto-crypto trading.
 |symbol|String|No|Coin, such as BTC|
 |type|Integer|No|RECHARGE(1),WITHDRAW(2),BUY(7),SELL(8),TRANSFER_IN(43),TRANSFER_OUT(44),SERVICE_FEE_BUY(88),SERVICE_FEE_SELL(89)|
 |isHistory|Boolean|No|History data or not|
-  
-[1strade]: https://www.1strade.io
-[简体中文文档]: https://github.com/Bineng/Api/README.md

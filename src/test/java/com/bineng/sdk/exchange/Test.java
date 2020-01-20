@@ -46,6 +46,7 @@ public class Test {
                 .systemOrderType("limit")
                 .source("web")
                 .build())));
+        System.out.println(JSON.toJSONString(orderService.orderById("ETH_BTC",65096845193248L)));
 
         System.out.println(JSON.toJSONString(publicService.getTime()));
 
